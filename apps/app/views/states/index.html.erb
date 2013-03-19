@@ -1,0 +1,14 @@
+<h1> LISTING STATES IN VISITOR_DATA MGNT</h1>
+<table>
+<tr>
+	<th>NAME</th>
+</tr>
+
+<% @states.each do |state| %>
+<tr>
+	<td><%= state.name %></td>
+</tr>
+<% end %>
+</table>
+
+<%= link_to "New state", new_state_path %>
