@@ -1,0 +1,15 @@
+<h1> LISTING STATES /h1>
+<h1>they are follows</h1>
+<table>
+<tr>
+	<th>NAME</th>
+</tr>
+
+<% @states.each do |state| %>
+<tr>
+	<td><%= state.name %></td>
+</tr>
+<% end %>
+</table>
+
+<%= link_to "New state", new_state_path %>
